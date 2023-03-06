@@ -30,11 +30,11 @@ $WP config set WP_DEBUG_DISPLAY true --raw
 sed -i "s/<?php/<?php\n\nrequire_once dirname( __FILE__, 2 ) . '\/secrets.php';\n/g" ./htdocs/wp-config.php
 
 $WP core install \
-    --url=$TW_SITE_URL \
-    --title=$TW_SITE_TITLE \
-    --admin_user=$TW_ADMIN \
-    --admin_password=$TW_PASS \
-    --admin_email=$TW_EMAIL \
+    --url="$TW_SITE_URL" \
+    --title="$TW_SITE_TITLE" \
+    --admin_user="$TW_ADMIN" \
+    --admin_password="$TW_PASS" \
+    --admin_email="$TW_EMAIL" \
     --skip-email
 
 $WP plugin delete akismet hello
