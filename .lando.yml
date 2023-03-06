@@ -3,7 +3,7 @@ name: xxxx
 recipe: wordpress
 
 config:
-  php: '8.1'
+  php: '8.0'
   webroot: ./htdocs
   database: mariadb
   xdebug: develop,debug
