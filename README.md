@@ -1,5 +1,5 @@
-WordPress Bootstap
-==================
+WordPress Bootstrap
+===================
 
 Personal scripts for configuring a local WordPress site using Lando and WP-CLI.
 
