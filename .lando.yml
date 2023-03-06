@@ -1,0 +1,16 @@
+name: xxxx
+
+recipe: wordpress
+
+config:
+  php: '8.1'
+  webroot: ./htdocs
+  database: mariadb
+  xdebug: develop,debug
+  config:
+    via: nginx
+    php: php.ini
+
+services:
+  mailhog:
+    type: mailhog
