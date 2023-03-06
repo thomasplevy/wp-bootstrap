@@ -10,3 +10,4 @@ Personal scripts for configuring a local WordPress site using Lando and WP-CLI.
 3. Edit .env
 4. Start the environment: `lando start`
 5. Install WordPress: `./bin/install`
+6. Eject from git: `rm -rf .git`
